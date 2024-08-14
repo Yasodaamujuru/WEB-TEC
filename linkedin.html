@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linkedIn</title>
+    <style>
+        h1{
+            text-align: center;
+            color: rgb(11, 86, 227);
+            font-size: 50px;
+
+        }
+        h2{
+            font-size: 30px;
+        }
+            
+        form{
+            font-size: 20px;
+            margin-left: 40px;
+            padding: 20px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1><b>LinkedIn</b></h1>
+    <h2>Personal Information</h2>
+    <form  action="./hi.html">
+        
+        <label for="fName">First Name:</label>
+        <input type="text" width="20px" height="20px"   name="fName" id="fName" required><br><br>
+        
+        <label for="fName">Middle Name:</label>
+        <input type="text" name="fName" id="fName"><br><br>
+
+        <label for="fName">Last Name:</label>
+        <input type="text" name="fName" id="fName" required><br><br>
+        
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender">
+            <option value="">Select gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+        </select><br><br>
+
+        <label for="email">email:</label>
+        <input type="email" name="fName" id="fName" required><br><br>
+
+        <label for="email">Password:</label>
+        <input type="password" name="fName" id="email" required><br><br>
+
+        <label for="birth">DOB(Date of birth):</label>
+        <input type="date" name="fName" id="birth" required><br><br>
+    </form>
+    <h2>Professional Information</h2>
+    <form >
+        <label for="Jobtitle">Job Title:</label>
+        <input type="text" name="Jobtitle" id="Jobtitle" required><br><br>
+
+        <label for="companyname">Company name:</label>
+        <input type="text" name="companyname" id="companyname" required><br><br>
+        <label for="Industry">Industry:</label>
+        <select name="industry" id="industry">
+            <option value="technology">Technology</option>
+            <option value="finance">Finance</option>
+            <option value="healthcare">Healthcare</option>
+            <option value="education">Education</option>
+            <option value="other">Other</option>
+            
+        </select><br><br>
+        <label for="location">Location:</label>
+        <input type="text" name="location" id="location"><br><br>
+        <label >
+            <input type="checkbox" name="agreement"required >I agree to Linkedin's<a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+
+        </label><br><br>
+        
+        <input type="submit" value="submit Registration">
+        
+        
+        
+
+       
+
+    </form>
+
+    
+</body>
+</html>

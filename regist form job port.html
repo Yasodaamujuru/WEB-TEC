@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobportal</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 30px;
+        }
+       
+        
+        .form-container
+        {
+            background-color: aliceblue;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgb(0,0,0,0);
+            padding: 20px;
+            width: 400px;
+        }
+        .form1{
+            margin-bottom: 15px;
+            
+        }
+        .form1 input,.form1 select{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+    <h1><b><u>Job Application</u></b></h1>
+
+    <form action="jobsubmission.html">
+        <div class="form1">
+        <label for="name">Full name:</label>
+        <input type="text" name="name" id="name" required><br><br>
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender">
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">other</option>
+        </select><br><br>
+        <label for="dob">DOB(Date of birth):</label>
+        <input type="date" name="dob" id="dob" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password"><br><br>
+        <label for="phoneno">phone no:</label>
+        <input type="tel" name="phoneno" id="phoneno"><br><br>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" required></textarea><br><br>
+        <label for="highesteducation">Highest Education:</label>
+        <select name="highesteducation" id="highesteducation">
+            <option value="Graduation">Graduation</option>
+            <option value="PostGraduation">PostGraduation</option>
+            <option value="Phd">phd</option>
+        </select><br><br>
+        <label for="currentjob">Current job:</label>
+        <input type="text" name="currentjob" id="currentjob"><br><br>
+        <label for="companyname">Company name</label>
+        <input type="text" name="Companyname" id="companyname"><br><br>
+        <label for="industry">Industry:</label><br>
+        <select id="industry" name="industry" class="large-input">
+        <option value="technology">Technology</option>
+        <option value="finance">Finance</option>
+        <option value="healthcare">Healthcare</option>
+        <option value="education">Education</option>
+        <option value="marketing">Marketing</option>
+        <option value="engineering">Engineering</option>
+        <option value="other">Other</option>
+        </select><br><br>
+        <label for="years">Years of Experience</label>
+        <input type="number" name="years" id="years"><br><br>
+        <label for="resume">Upload resume:</label>
+        <input type="file" name="resume" id="resume"><br><br>
+        <label for="picture"> Upload photo:</label>
+        <input type="file" name="picture" id="picture"><br><br>
+        
+        <input type="submit" value="submit registration">
+
+        
+
+
+       
+
+    </div>
+      </div> 
+    </form>
+    
+</body>
+</html>

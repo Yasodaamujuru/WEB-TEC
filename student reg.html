@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>studentregform</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 30px;
+            color: black;
+        }
+        .form-container{
+           background-color: antiquewhite;
+           border-radius: 5px;
+           box-shadow: 0 0 10px rgb(0,0,0,0);
+           padding: 20px;
+           width: 400px;
+            
+        }
+        .form1{
+            margin-bottom: 10px;
+            
+        }
+        .form1 input,.form1 select{
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #3b2424;
+            border-radius: 5px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+            color: black;
+        }
+        
+         
+    </style>
+
+</head>
+<body>
+    <div class="form-container">
+    <h1><b><u>Student Registration Form</u></b></h1>
+    <form action="studentregsubmission.html">
+        <div class="form1">
+        <label for="name">First name:</label>
+        <input type="text" name="name" id="name" required><br><br>
+        <label for="lastname">Last name:</label>
+        <input type="text" name="lastname" id="lastname"><br><br>
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender">
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">other</option>
+        </select><br><br>
+        <label for="dob">DOB(Date of birth):</label>
+        <input type="date" name="dob" id="dob" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br><br>
+        <label for="phoneno">phone no:</label>
+        <input type="tel" name="phoneno" id="phoneno"><br><br>
+       
+        <label for="address" >Address:</label>
+        <input type="text" id="street" name="address[street]" placeholder="Street Address" ><br><br>
+        <input type="text" id="city" name="address[city]" placeholder="City" ><br><br>
+        <input type="text" id="state" name="address[state]" placeholder="State/Province/Region"><br><br>
+        <input type="text" id="zip" name="address[zip]" placeholder="Postal/Zip Code" ><br><br>
+       <input type="text" id="country" name="address[country]" placeholder="Country" ><br><br>
+    
+        <label for="course">course:</label>
+        <select name="course" id="course">
+            <option value="">selectcourse</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="Degree">Degree</option>
+            <option value="diploma">Diploma</option>
+            <option value="paramedical">Paramedical</option>
+            <option value="pharamacy">Pharmacy</option>
+        </select><br><br>
+        <label for="details">parents details:</label>
+        <input type="details" name="details" id="details" required><br><br>
+        <label for="parentphone" class="form-label">Parent/Guardian Phone Number:</label>
+        <input type="tel" id="parentphone" name="parentphone" ><br><br>
+        <label for="parentemail" class="form-label">Parent/Guardian Email Address:</label>
+        <input type="email" id="parentemail" name="parentemail" ><br><br>
+        <input type="submit" value="Submit Registration" >
+
+
+        
+
+
+        
+
+        
+        
+    </form>
+
+    </div>
+        </div>
+    
+</body>
+</html>
